@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>Learn VueJS</title>
+        <script src="vue.js"></script>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                border: 1px solid gray;
+                margin: 10px;
+                display: inline-block;
+                background-color: gray;
+            }
+
+            .red {
+                background-color: red;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div id="app">
+            <button v-on:click="clickHandler(2)">Click Me</button>
+            <p>{{ counter }}</p>
+        </div>
+
+        <hr />
+
+        <div id="coordinates">
+            <p v-on:mousemove="updateCoordinates">
+                X: {{ x }}; Y: {{ y }}
+                <span v-on:mousemove.stop>DEAD END</span>
+            </p>
+        </div>
+
+        <hr />
+
+        <div id="events">
+            <input type="text" v-on:keyup.enter="alertMe" />
+        </div>
+
+        <hr />
+
+        <div id="two-way-binding">
+            <h3>Two way binding</h3>
+            <input type="text" v-bind:value="name" v-on:input="updateName(1, 2, $event)" />
+            <input type="text" v-model="name" />
+            <br />
+            <p>NAME: {{ name }}</p>
+        </div>
+
+        <hr /> -->
+
+        <!-- <div id="computed-properties">
+            <button v-on:click="incrementCounter">Increment Counter</button>
+            <button v-on:click="incrementSecondCounter">Increment Second Counter</button>
+            <p>Counter: {{ getCounterComputed }}</p>
+            <p>Counter: {{ getCounterMethod() }}</p>
+            <p>Second Counter: {{ secondCounter }}</p>
+        </div> -->
+
+        <!-- <div id="watch">
+            <button v-on:click="incrementCounter">Increment</button>
+            <p>Counter: {{ counter }}</p>
+        </div> -->
+
+        <!-- <div id="classes">
+            <div class="box" :class="{red: attachRed}" v-on:click="attachRed = !attachRed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+            <div :style="[{border: '4px solid blue'}, {height: '400px', width: '300px', backgroundColor: 'red'}]"></div>
+        </div> -->
+
+        <!-- <div id="ifelse">
+            <button @click="num = 1">1</button>
+            <button @click="num = 2">2</button>
+            <button @click="num = 3">3</button>
+            <button @click="num = 10">110</button>
+            <p v-if="num === 1">Num is 1</p>
+            <p v-else-if="num === 2">Num is 2</p>
+            <p v-else-if="num === 3">Num is 3</p>
+            <p v-else>Num is unknown</p>
+
+            <button @click="showTemplate = !showTemplate">Toggle template</button>
+            <template v-if="showTemplate">
+                <p>
+                    Elem 1
+                </p>
+                <p>
+                    Elem 2
+                </p>
+            </template>
+
+            <button @click="showBox = !showBox">Show/Hide box</button>
+            <div :style="{height:'40px',width:'40px',backgroundColor:'red'}" v-show="showBox"></div>
+        </div> -->
+
+        <!-- <div id="for">
+            <ul>
+                <li v-for="(animal, i) in animals">{{ animal }} ({{ i }})</li>
+            </ul>
+
+            <ul>
+                <li v-for="person in persons">
+                    <div v-for="(v, k, i) in person">{{k}}: {{v}} (Detail: {{i}})</div>
+                </li>
+            </ul>
+
+            <h3>Numbers</h3>
+            <ul>
+                <li v-for="num in 10">{{ num }}</li>
+            </ul>
+        </div> -->
+
+        <!-- Interacting between instances -->
+        <!-- <div id="vm1">
+            <h2>{{ title }}</h2>
+            <button v-on:click="updateInstance2Title">Change instance 2 title</button>
+        </div>
+        
+        <div id="vm2">
+            <h2 ref="heading">{{ title }}</h2>
+        </div> -->
+
+        <!-- <div id="mount">
+            <h2>{{ title }}</h2>
+        </div> -->
+
+        <div id="hooks">
+            <h2>{{ title }}</h2>
+            <button @click="title = 'Updated title'">Update Title</button>
+            <button @click="onDestroy">Destroy Instance</button>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
